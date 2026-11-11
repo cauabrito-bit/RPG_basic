@@ -26,16 +26,16 @@ public class SalaRPG {
 			deku.receberDano(danoHero, shigaraki.getNome());
 			
 			System.out.println("Digite 1 para atacar ou 2 para fugir: ");
-			resposta = scanner.nextInt();
+			int decisao = scanner.nextInt();
 			
-			while(resposta != 1 && resposta !=2) {
+			while(decisao != 1 && decisao !=2) {
 				System.out.println("VALOR INVALIDO");
 				System.out.println("Digite 1 para atacar ou 2 para fugir: ");
 				
-				resposta = scanner.nextInt();
+				decisao = scanner.nextInt();
 			}
 			
-			if(resposta == 1) {
+			if(decisao == 1) {
 				System.out.println("O VILAOZINHO FOI ATACADO");
 				int danoVilao = deku.atacar();
 				shigaraki.receberDano(danoVilao, deku.getNome());
@@ -49,13 +49,13 @@ public class SalaRPG {
 			int danoVilao = deku.atacar();
 			shigaraki.receberDano(danoVilao, deku.getNome());
 			System.out.println("Digite 1 para atacar ou 2 para fugir: ");
-			resposta = scanner.nextInt();
-			while(resposta != 1 && resposta !=2) {
+			int decisao = scanner.nextInt();
+			while(decisao != 1 && decisao !=2) {
 				System.out.println("VALOR INVALIDO");
 				System.out.println("Digite 1 para atacar ou 2 para fugir: ");
-				resposta = scanner.nextInt();
+				decisao = scanner.nextInt();
 			}
-			if(resposta == 1) {
+			if(decisao == 1) {
 				System.out.println("O HEROIZINHO FOI ATACADO");
 				int danoHero = shigaraki.atacar();
 				deku.receberDano(danoHero, shigaraki.getNome());
